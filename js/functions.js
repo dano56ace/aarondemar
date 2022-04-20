@@ -35,7 +35,7 @@ $(document).ready (function() {
 		function processResults(data, textStatus) {
 			if(textStatus == 'success')
 			{
-				$('#success').text('<p class="regular">The message has been sent successfully</p>');
+				$('#success').text('The message has been sent successfully!');
 				$('#success').fadeIn('slow'); //display success message
 				$('#email').hide(); //hide form
 			}
