@@ -34,7 +34,14 @@ Character Designing">
 
 
 <!-- Instagram Jquery-->
-<script src="instashow/elfsight-instagram-feed.js"></script>
+<script src="jquery-instagram-element/lib/videoplayer-4/build/mediaelement-and-player.min.js"></script>
+<script type="text/javascript" src="jquery-instagram-element/lib/fancybox2/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="jquery-instagram-element/lib/dateFormat.js"></script>
+<script type="text/javascript" src="jquery-instagram-element/lib/easing.js"></script>
+<script type="text/javascript" src="jquery-instagram-element/instagramElement.js"></script>
+<link rel="stylesheet" href="jquery-instagram-element/lib/videoplayer-4/build/mediaelementplayer.min.css" media="screen">
+<link href="jquery-instagram-element/lib/fancybox2/source/jquery.fancybox.css" rel="stylesheet">
+<link href="jquery-instagram-element/instagramElement.css" rel="stylesheet">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -167,15 +174,9 @@ I am a very creative person who is inspired by entrepreneurs. My goal is to own 
 <br><br>
 <h3 class="center"> Follow my Instagram Account <a href="https://www.instagram.com/Aero_trill_" target="_blank" style="color:#bf1e2e"> @Aero_trill_</a></h3>
 
-<div data-is
-     data-is-api="instashow/api/index.php"
-     data-is-source="@Aero_trill_"
-     data-is-width="auto"
-     data-is-layout="grid"
-     data-is-columns="3"
-     data-is-rows="3"
-     data-is-lang="en">
-</div>
+<div class="element"></div>
+
+
 
 
 
@@ -194,7 +195,17 @@ I am a very creative person who is inspired by entrepreneurs. My goal is to own 
 </div>
 <!-- End Container-->
 
+<script>
+  $('.element').instagramElement({
+   mode : 'user',
+   userID : '17841405594400543',
+   accessToken : 'EAAEHqNm5i0cBACbhDDyvExARqTV30dm0QOGKu0m39jgmT7OZBeNyDiPfm54H0hzmaebxQaWThxWr6aDWyy3O8EJ8pTrWJkNrcsqreuDB1mQFOUU2jmqQd0OQ7OHQuINo4RZBVyFhaqX83oesKqsWP9WzJ16Wn13HzLvXzL4QZDZD',
+   galleryMode: 'classic',
+   video: true,
+   showVideoControls: false
+});
 
+</script>
 
 </body>
 </html>
